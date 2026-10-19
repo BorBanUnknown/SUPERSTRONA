@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* topbar */
+
+#topbar {
+  width: 100%;
+}
+
+#topbar > header {
+  display: flex;
+  padding-inline: 5%;
+  height: 80px;
+  align-items: center;
+}
+
+/* LOGO DJ */
+
+#topbar header img {
+  width: 100px;
+  display: block;
+}
