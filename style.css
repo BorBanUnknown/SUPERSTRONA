@@ -3,24 +3,83 @@ body {
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: pink;
+  background-color: rgb(253, 118, 190);
 }
 
 /* topbar */
 
 #topbar {
   width: 100%;
+  border-bottom: 1px solid black;
+  background-color: pink;
+  font-weight: 900;
 }
 
 #topbar > header {
   display: flex;
   padding-inline: 5%;
+  padding: 3%;
   height: 80px;
-  align-items: center;
+  justify-content: center;
 }
 
 /* LOGO DJ */
 
 #topbar header img {
-  width: 100px;
+  width: 200px;
   display: block;
+}
+
+#topbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 12.5%;
+  flex-wrap: wrap;
+}
+
+#topbar ul li {
+  display: flex;
+}
+
+#topbar ul li a {
+  display: flex;
+  text-decoration: none;
+}
+
+#topbar ul li a:visited {
+  color: deeppink;
+}
+
+/*MAIN*/
+
+#zawartosc main {
+  padding: 20px;
+  display: flex;
+}
+#zawartosc main #image {
+  text-align: start;
+  letter-spacing: 18.9px;
+}
+
+#zawartosc main #image h3 {
+  text-align: center;
+}
+
+#zawartosc main #image img {
+  text-align: start;
+  width: 590px;
+}
+
+#zawartosc main #spany {
+  display: flex;
+  flex-direction: column;
+}
+
+#zawartosc main #spany span {
+  padding-top: 79px;
+  padding-left: 20px;
+  font-size: 20px;
 }
