@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: pink;
-  background-color: rgb(253, 118, 190);
+  background-color: palevioletred;
 }
 
 /* topbar */
@@ -55,31 +55,55 @@ body {
 
 /*MAIN*/
 
-#zawartosc main {
-  padding: 20px;
+#zawartosc {
+  justify-content: center;
+  width: 100%;
   display: flex;
 }
-#zawartosc main #image {
-  text-align: start;
-  letter-spacing: 18.9px;
-}
 
-#zawartosc main #image h3 {
-  text-align: center;
-}
-
-#zawartosc main #image img {
-  text-align: start;
-  width: 590px;
-}
-
-#zawartosc main #spany {
+#zawartosc main {
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
 
-#zawartosc main #spany span {
-  padding-top: 79px;
-  padding-left: 20px;
-  font-size: 20px;
+#zawartosc main #image h3 {
+  text-align: center;
+  visibility: hidden;
+}
+
+#zawartosc main #image img {
+  text-align: start;
+  width: 100px;
+  transition: 0.5s;
+}
+
+#zawartosc main #image #spany {
+  display: flex;
+  visibility: hidden;
+}
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+#zawartosc main #image:hover #spany {
+  display: flex;
+  visibility: visible;
+  transition: 0.5s;
+}
+
+#zawartosc main #image:hover img {
+  text-align: start;
+  width: 590px;
+  transition: 0.5s;
+}
+
+#zawartosc main #image:hover {
+  text-align: start;
+  width: 100%;
+  transition: 0.5s;
+}
+
+#zawartosc main #image:hover h3 {
+  text-align: center;
+  visibility: visible;
+  transition: 0.5s;
 }
